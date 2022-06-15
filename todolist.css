@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;600&family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+img{
+    max-width: 100%;
+}
+
+html{
+    background-color: #f5f5f5;
+    font-family: 'Poppins';
+}
+
+.my-row{
+    display: flex  !important;
+}
+
+.main{
+    width:90%;
+    margin:60px auto;
+    max-width: 600px ;
+    background-color: transparent;
+}
+.add-task{
+    margin-bottom:43px;
+}
+
+header{
+    text-align: center;
+    margin-bottom:20px;
+}
+
+.add-task{
+    border-radius:5px;
+    border:2px solid #2eb83a8f;
+    position: relative;
+}
+
+input{
+    border:none;
+    outline:none;
+}
+
+.add-task > input{
+    width:85% ;
+    padding:5px 0 5px 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.my-btn{
+    padding:10px;
+    background-color: transparent;
+    border:none;
+    border-left:2px solid #2eb83a8f ;
+    color:#23af2f;
+    font-size: medium;
+    cursor:pointer;
+}
+
+.tasks-container{
+    flex-direction: column;
+    gap:18px;
+    text-align: center;
+}
+
+.tasks{
+    text-align: left;
+    align-items: center;
+}
+
+.tasks input{
+    background-color: transparent;
+    font-size: 18px;
+    color:black;
+    padding:6px;
+    border-radius:8px;
+    transition-duration: .8s;
+    transition-property: box-shadow;
+    width:90%;
+}
+
+.tasks input:focus{
+    box-shadow: 0px 0px 10px 4px #23af2f;
+}
+
+.tasks input::placeholder{
+    color:rgb(243, 53, 53);
+}
+
+.text-div{
+    flex-grow: 1;
+}
+
+.btn-container{
+    margin-top:50px;
+}
+
+.btn-container button{
+    display: block;
+    margin:0 auto;
+    border:1px solid #23af2f;
+    border-radius: 5px;
+}
+
+
+.icon-container i{
+    font-size:20px;
+    cursor: pointer;
+}
+
+.icon-container i + i{
+    margin-left:6px;
+}
+
+.fa-circle-check{
+    color:#40c54b;
+}
+.fa-pen-to-square{
+    color:#5facc8;
+}
+.fa-circle-xmark{
+    color:#bd2c37;
+}
+
+.error{
+    position: absolute;
+    top:80px;
+    display: none;
+    color:rgb(216, 30, 30);
+}
+
+/* ! Fixing Bootstrap styles */
+
+.my-btn{
+    width:auto;
+}
+
+body{
+    background-color:transparent;
+}
+
+/* ! Fixing Bootstrap styles */
+
+@media screen and (max-width:420px){
+
+    .tasks{
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+    }
+    .tasks input{
+        text-align: center;
+    }
+    .add-task{
+        flex-direction: column;
+    }
+    .add-task input{
+        width:100%;
+    }
+    .add-task button{
+        border-left:none;
+    }
+
+    .tasks input{
+        width:100%;
+    }
+}
