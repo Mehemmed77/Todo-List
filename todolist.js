@@ -42,7 +42,7 @@ const addTask = () => {
                 <i class="fa fa-circle-check" id="liveToastBtn" onclick="taskDone(${count})"></i>
                 <i class="fa fa-pen-to-square" onclick="taskEdit(${count})"></i>
                 <i class="fa fa-circle-xmark" data-bs-toggle="modal" 
-                data-bs-target="#exampleModal" value='${count}'></i>
+                data-bs-target="#exampleModal" onclick="taskDelete(${count})"></i>
             </div>
         </div>
         `)
